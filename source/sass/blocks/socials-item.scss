@@ -1,0 +1,25 @@
+.socials-item {
+  display: flex;
+}
+
+.socials-item__link {
+  display: flex;
+  gap: 20px;
+}
+
+.socials-item__quantity {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #eff3f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials-item__subscribers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #eff3f5;
+}

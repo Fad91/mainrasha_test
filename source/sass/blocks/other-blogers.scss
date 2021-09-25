@@ -1,0 +1,21 @@
+.other-blogers {
+  max-width: 1304px;
+  margin: 0 auto;
+}
+
+.other-blogers__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  color: #eff3f5;
+}
+
+.other-blogers__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 20px;
+}

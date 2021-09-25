@@ -1,0 +1,12 @@
+.switch-lang {
+  display: flex;
+  gap: 10px;
+}
+
+.switch-lang a,
+.switch-lang span {
+  color: #eff3f5;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}

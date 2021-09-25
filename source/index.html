@@ -1,13 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Mainrasha_test</title>
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<body class="page-body">
+  <div class="visually-hidden">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <a class="nav__link">
+          <svg width="98" height="98" viewBox="0 0 98 98">
+            <use href="#icon-logo-header"></use>
+          </svg>
+        </a>
+        <!-- <button class="nav__button nav__button--closed">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
+      </div>
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a href="#">Блогеры</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#">Кейсы</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#">exit agency</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <div class="switch-lang">
+        <a href="#">en</a>
+        <span>/</span>
+        <a href="#">ru</a>
+      </div>
+    </nav>
+    <ul class="breadcrumbs">
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li>
+        <a href="#">Блогеры</a>
+      </li>
+    </ul>
+  </header>
+  <main class="page-main">
+    <section class="main-section">
+      <h1 class="main-section__title">Блогеры</h1>
+      <div class="sort-block">
+        <span class="sort-block__text">Сортировать по:</span>
+        <div class="select" id="select-1">
+
+          <button type="button" class="select__toggle" name="site" value="" data-select="toggle"
+            data-index="-1">выберите площадку</button>
+
+          <div class="select__dropdown">
+            <ul class="select__options">
+              <li class="select__option" data-select="option" data-value="youtube" data-index="0">Youtube</li>
+              <li class="select__option" data-select="option" data-value="vkontakte" data-index="1">Vkontakte</li>
+              <li class="select__option" data-select="option" data-value="instagram" data-index="2">Instagram</li>
+            </ul>
+          </div>
+        </div>
+        <div class="select" id="select-2">
+
+          <button type="button" class="select__toggle" name="category" value="" data-select="toggle"
+            data-index="-1">выберите направление</button>
+
+          <div class="select__dropdown">
+            <ul class="select__options">
+              <li class="select__option" data-select="option" data-value="all" data-index="0">Все</li>
+              <li class="select__option" data-select="option" data-value="diy" data-index="1">DIY</li>
+              <li class="select__option" data-select="option" data-value="auto" data-index="2">Авто</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <select name="site" id="site">
+          <option value="youtube">Youtube</option>
+          <option value="vkontakte">Vkontakte</option>
+          <option value="instagram">Instagram</option>
+        </select>
+        <select name="category" id="category">
+          <option value="all">Все</option>
+          <option value="diy">DIY</option>
+          <option value="auto">Авто</option>
+          <option value="shows">Авторские шоу</option>
+          <option value="unboxing">Анбоксинг</option>
+          <option value="food">Еда</option>
+          <option value="animals">Животные</option>
+          <option value="games">Игры</option>
+          <option value="languages">Иностранные языки</option>
+          <option value="movie">Кино</option>
+          <option value="beauty">Красота</option>
+        </select>
+        ТУТ БУДЕТ Кастомный СЕЛЕКТ и сортировка -->
+      </div>
+      <ul class="blogers-list">
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="blogers-list__item blogers-item">
+          <a href="bloger.html">
+            <div class="blogers-item__content">
+              <h2 class="blogers-item__title">Макс Максимов</h2>
+              <ul class="blogers-stats">
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-youtube"></use>
+                    </svg>
+                    160 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-vk"></use>
+                    </svg>
+                    134 000+
+                  </span>
+                </li>
+                <li class="blogers-stats__item stats-item">
+                  <span class="stats-item__content" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use href="#icon-instagram"></use>
+                    </svg>
+                    128 000+
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
+      <a class="footer__link">
+        <svg width="201" height="201" viewBox="0 0 201 201">
+          <use href="#icon-logo-footer" fill="none"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="contacts-block" id="contacts">
+      <p>Связаться с нами</p>
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:reklama@wildjam.ru">reklama@wildjam.ru</a>
+        </li>
+        <li class="contacts__item">
+          <span>ул. Сущевская, д. 27, стр. 2</span>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+74993933962">+7 (499) 393-39-62</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

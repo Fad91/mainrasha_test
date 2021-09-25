@@ -1,0 +1,10 @@
+.nav {
+  max-width: 1440px;
+  padding: 0 68px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr min-content;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 270px;
+}

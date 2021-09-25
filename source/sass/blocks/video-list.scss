@@ -1,0 +1,9 @@
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  row-gap: 30px;
+  column-gap: 20px;
+}

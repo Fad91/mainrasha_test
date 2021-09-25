@@ -1,0 +1,24 @@
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 68px;
+  gap: 10px;
+}
+
+.breadcrumbs a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #eff3f5;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "/";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #eff3f5;
+  margin-left: 5px;
+}

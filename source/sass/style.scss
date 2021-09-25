@@ -1,3 +1,34 @@
-h1 {
-  color: red;
-}
+// файл стилей
+
+// global
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+
+// blocks
+
+@import "blocks/nav.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/switch-lang.scss";
+@import "blocks/breadcrumbs.scss";
+@import "blocks/main-section.scss";
+@import "blocks/sort-block.scss";
+@import "blocks/custom-select.scss";
+@import "blocks/blogers-list.scss";
+@import "blocks/blogers-item.scss";
+@import "blocks/blogers-stats.scss";
+@import "blocks/stats-item.scss";
+@import "blocks/footer.scss";
+@import "blocks/contacts-block.scss";
+@import "blocks/contacts.scss";
+@import "blocks/bloger-section.scss";
+@import "blocks/bloger-info.scss";
+@import "blocks/info-content.scss";
+@import "blocks/socials.scss";
+@import "blocks/socials-item.scss";
+@import "blocks/video-section.scss";
+@import "blocks/video-list.scss";
+@import "blocks/other-blogers.scss";
+@import "blocks/slider-buttons.scss";

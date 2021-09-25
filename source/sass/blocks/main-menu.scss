@@ -1,0 +1,15 @@
+.main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.main-menu__item a {
+  color: #eff3f5;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
