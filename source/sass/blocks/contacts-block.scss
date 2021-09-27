@@ -2,6 +2,13 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 30px;
+
+  @include vp--767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
 }
 
 .contacts-block p {
@@ -11,4 +18,9 @@
   color: #eff3f5;
   margin: 0;
   width: 187px;
+
+  @include vp--1023 {
+    align-items: center;
+    display: flex;
+  }
 }

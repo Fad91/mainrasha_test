@@ -9,6 +9,7 @@
 
 // blocks
 
+@import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/switch-lang.scss";
@@ -23,6 +24,7 @@
 @import "blocks/footer.scss";
 @import "blocks/contacts-block.scss";
 @import "blocks/contacts.scss";
+@import "blocks/socials-contacts.scss";
 @import "blocks/bloger-section.scss";
 @import "blocks/bloger-info.scss";
 @import "blocks/info-content.scss";
@@ -30,5 +32,6 @@
 @import "blocks/socials-item.scss";
 @import "blocks/video-section.scss";
 @import "blocks/video-list.scss";
+@import "blocks/video-item.scss";
 @import "blocks/other-blogers.scss";
 @import "blocks/slider-buttons.scss";

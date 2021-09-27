@@ -5,6 +5,7 @@
 .socials-item__link {
   display: flex;
   gap: 20px;
+  cursor: $custom-cursor;
 }
 
 .socials-item__quantity {

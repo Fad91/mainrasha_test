@@ -4,4 +4,8 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eff3f5;
+  margin-bottom: 30px;
+  row-gap: 30px;
 }

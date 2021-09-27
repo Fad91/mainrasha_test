@@ -1,6 +1,6 @@
 .sort-block {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .sort-block__text {
@@ -8,4 +8,5 @@
   font-size: 20px;
   line-height: 24px;
   color: #eff3f5;
+  margin-right: 40px;
 }
